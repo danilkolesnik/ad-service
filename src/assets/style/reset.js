@@ -6,14 +6,13 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     transition: all .45s ease;
-    user-select: none;
   }
 a {
   text-decoration: none;
 }
 h1::-webkit-scrollbar {
   -webkit-appearance: none;
-  width: 7px;
+  width: 7px; 
 }
 
 h1::-webkit-scrollbar-thumb {
@@ -23,6 +22,6 @@ h1::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 `;
