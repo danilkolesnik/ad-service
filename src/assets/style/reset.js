@@ -6,6 +6,7 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     transition: all .45s ease;
+    outline: none;
   }
 a {
   text-decoration: none;

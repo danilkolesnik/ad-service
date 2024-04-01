@@ -1,5 +1,8 @@
 import React from "react";
 import {
+  VacancySearchBar,
+  SearchInput,
+  SearchButton,
   HomeVacancyCard,
   VacancyCardCaption,
   VacancyCardPrice,
@@ -18,7 +21,7 @@ import company from "../../assets/icons/company.svg";
 import gotowork from "../../assets/icons/gotowork.svg";
 import house from "../../assets/icons/house.svg";
 import heartUnfilled from "../../assets/icons/heart-unfilled.svg";
-import heartFilled from "../../assets/icons/heart-filled.png";
+// import heartFilled from "../../assets/icons/heart-filled.png";
 import hide from "../../assets/icons/hided.svg";
 
 const Vacancies = () => {
@@ -32,6 +35,11 @@ const Vacancies = () => {
 
   return (
     <>
+      <VacancySearchBar>
+        <SearchInput placeholder="Vacancy..."></SearchInput>
+        <SearchButton>Find!</SearchButton>
+      </VacancySearchBar>
+
       <HomeVacancyCard>
         <VacancyCardCaption>Front-End Developer</VacancyCardCaption>
         <CardSecondaryInfoWrapper>

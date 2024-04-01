@@ -90,7 +90,43 @@ const CardBottomButtonWrapper = styled.div`
     background-color: ${hoverColor};
   }
 `;
+
+const VacancySearchBar = styled.section`
+  background-color: #fff;
+  box-shadow: rgba(53, 54, 78, 0.25) 0px 0px 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 0% 2% 0% 3%;
+`;
+
+const SearchInput = styled.input`
+  font-family: ${font_cera};
+  color: ${fontColor};
+  font-size: 17px;
+  border: none;
+  width: 100%;
+`;
+
+const SearchButton = styled.button`
+  font-family: ${font_cera_bold};
+  color: ${fontColor};
+  font-size: 17px;
+  background-color: #ed1a41;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  padding: 0px 15px;
+  height: 42px;
+`;
+
 export {
+  VacancySearchBar,
+  SearchInput,
+  SearchButton,
   HomeVacancyCard,
   VacancyCardCaption,
   CardSecondaryInfoWrapper,
