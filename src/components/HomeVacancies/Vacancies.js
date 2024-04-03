@@ -24,6 +24,8 @@ import heartUnfilled from "../../assets/icons/heart-unfilled.svg";
 // import heartFilled from "../../assets/icons/heart-filled.png";
 import hide from "../../assets/icons/hided.svg";
 
+import { NavLink } from "react-router-dom";
+
 const Vacancies = () => {
   const shortenDescription = (text) => {
     if (text.length <= 240) {
@@ -40,67 +42,70 @@ const Vacancies = () => {
         <SearchButton>Find!</SearchButton>
       </VacancySearchBar>
 
-      <HomeVacancyCard>
-        <VacancyCardCaption>Front-End Developer</VacancyCardCaption>
-        <CardSecondaryInfoWrapper>
-          <VacancyIcon src={salary} alt="salary" />
-          <VacancyCardPrice>1500 - 2000 $</VacancyCardPrice>
-        </CardSecondaryInfoWrapper>
-        <CardSecondaryInfoWrapper>
-          <VacancyIcon src={company} alt="salary" />
-          <VacancyCardCompany>HighTec Commerce</VacancyCardCompany>
-        </CardSecondaryInfoWrapper>
-        <CardSecondaryInfoWrapper>
-          <VacancyIcon src={gotowork} alt="salary" />
-          <VacancyCardCompany>Locally/in the office</VacancyCardCompany>
-        </CardSecondaryInfoWrapper>
-        <CardDecorativeLine />
-        <DescriptionWrapper>
-          <VacancyDescription>
-            {shortenDescription(`We are WOP lab!
+      <NavLink to="/vacancy/">
+        <HomeVacancyCard>
+          <VacancyCardCaption>Front-End Developer</VacancyCardCaption>
+          <CardSecondaryInfoWrapper>
+            <VacancyIcon src={salary} alt="salary" />
+            <VacancyCardPrice>1500 - 2000 $</VacancyCardPrice>
+          </CardSecondaryInfoWrapper>
+          <CardSecondaryInfoWrapper>
+            <VacancyIcon src={company} alt="salary" />
+            <VacancyCardCompany>HighTec Commerce</VacancyCardCompany>
+          </CardSecondaryInfoWrapper>
+          <CardSecondaryInfoWrapper>
+            <VacancyIcon src={gotowork} alt="salary" />
+            <VacancyCardCompany>Locally/in the office</VacancyCardCompany>
+          </CardSecondaryInfoWrapper>
+          <CardDecorativeLine />
+          <DescriptionWrapper>
+            <VacancyDescription>
+              {shortenDescription(`We are WOP lab!
               A young, ambitious and promising company in the IT field. Our story began in 2017.
               What do we do? We help in the development of businesses and startups in the European and US markets. We already have more than 200 successful projects to our credit, and we are not going to stop.
               What are we cool about? First — Technologies! We listen to the idea and realize it with the help of modern and innovative solutions. Secondly, Web development! We help in the implementation of web projects with all the details in the new site. Thirdly — Technical support! We ensure a long and healthy life for our projects. Our website: https://wop-lab.company/
               We are actively looking for a Front end developer (Vue.js).
               If you want to develop and get better every day, then you should definitely come to us!`)}
-          </VacancyDescription>
-        </DescriptionWrapper>
-        <СardBottomContainer>
-          <VacancyDescription $date>2 days ago</VacancyDescription>
+            </VacancyDescription>
+          </DescriptionWrapper>
+          <СardBottomContainer>
+            <VacancyDescription $date>2 days ago</VacancyDescription>
 
-          <BottomActionsContainer>
-            <CardBottomButtonWrapper>
-              <VacancyIcon src={hide} alt="save" />
-              <VacancyCardCompany>Hide</VacancyCardCompany>
-            </CardBottomButtonWrapper>
-            <CardBottomButtonWrapper>
-              <VacancyIcon src={heartUnfilled} alt="save" />
-              <VacancyCardCompany>Save</VacancyCardCompany>
-            </CardBottomButtonWrapper>
-          </BottomActionsContainer>
-        </СardBottomContainer>
-      </HomeVacancyCard>
+            <BottomActionsContainer>
+              <CardBottomButtonWrapper>
+                <VacancyIcon src={hide} alt="save" />
+                <VacancyCardCompany>Hide</VacancyCardCompany>
+              </CardBottomButtonWrapper>
+              <CardBottomButtonWrapper>
+                <VacancyIcon src={heartUnfilled} alt="save" />
+                <VacancyCardCompany>Save</VacancyCardCompany>
+              </CardBottomButtonWrapper>
+            </BottomActionsContainer>
+          </СardBottomContainer>
+        </HomeVacancyCard>
+      </NavLink>
 
-      <HomeVacancyCard>
-        <VacancyCardCaption>
-          Strong Middle Full-Stack Developer
-        </VacancyCardCaption>
-        <CardSecondaryInfoWrapper>
-          <VacancyIcon src={salary} alt="salary" />
-          <VacancyCardPrice>2100 - 2300 $</VacancyCardPrice>
-        </CardSecondaryInfoWrapper>
-        <CardSecondaryInfoWrapper>
-          <VacancyIcon src={company} alt="salary" />
-          <VacancyCardCompany>SLAN</VacancyCardCompany>
-        </CardSecondaryInfoWrapper>
-        <CardSecondaryInfoWrapper>
-          <VacancyIcon src={house} alt="salary" />
-          <VacancyCardCompany>Remote</VacancyCardCompany>
-        </CardSecondaryInfoWrapper>
-        <CardDecorativeLine />
-        <DescriptionWrapper>
-          <VacancyDescription>
-            {shortenDescription(`We are looking for a strong Middle/Senior Shopify Full-Stack
+      <NavLink to="/vacancy/">
+        <HomeVacancyCard>
+          <VacancyCardCaption>
+            Strong Middle Full-Stack Developer
+          </VacancyCardCaption>
+          <CardSecondaryInfoWrapper>
+            <VacancyIcon src={salary} alt="salary" />
+            <VacancyCardPrice>2100 - 2300 $</VacancyCardPrice>
+          </CardSecondaryInfoWrapper>
+          <CardSecondaryInfoWrapper>
+            <VacancyIcon src={company} alt="salary" />
+            <VacancyCardCompany>SLAN</VacancyCardCompany>
+          </CardSecondaryInfoWrapper>
+          <CardSecondaryInfoWrapper>
+            <VacancyIcon src={house} alt="salary" />
+            <VacancyCardCompany>Remote</VacancyCardCompany>
+          </CardSecondaryInfoWrapper>
+          <CardDecorativeLine />
+          <DescriptionWrapper>
+            <VacancyDescription>
+              {shortenDescription(`We are looking for a strong Middle/Senior Shopify Full-Stack
             developer to join our team and help us create innovative and
             efficient solutions for our clients using the Shopify platform.
             Required skills At least 3 years of solid experience developing the
@@ -117,23 +122,24 @@ const Vacancies = () => {
             Performance Optimization Shopify certifications will be a plus Good
             communication skills in both written and verbal English
             (Intermediate and higher)`)}
-          </VacancyDescription>
-        </DescriptionWrapper>
-        <СardBottomContainer>
-          <VacancyDescription $date>6 days ago</VacancyDescription>
+            </VacancyDescription>
+          </DescriptionWrapper>
+          <СardBottomContainer>
+            <VacancyDescription $date>6 days ago</VacancyDescription>
 
-          <BottomActionsContainer>
-            <CardBottomButtonWrapper>
-              <VacancyIcon src={hide} alt="save" />
-              <VacancyCardCompany>Hide</VacancyCardCompany>
-            </CardBottomButtonWrapper>
-            <CardBottomButtonWrapper>
-              <VacancyIcon src={heartUnfilled} alt="save" />
-              <VacancyCardCompany>Save</VacancyCardCompany>
-            </CardBottomButtonWrapper>
-          </BottomActionsContainer>
-        </СardBottomContainer>
-      </HomeVacancyCard>
+            <BottomActionsContainer>
+              <CardBottomButtonWrapper>
+                <VacancyIcon src={hide} alt="save" />
+                <VacancyCardCompany>Hide</VacancyCardCompany>
+              </CardBottomButtonWrapper>
+              <CardBottomButtonWrapper>
+                <VacancyIcon src={heartUnfilled} alt="save" />
+                <VacancyCardCompany>Save</VacancyCardCompany>
+              </CardBottomButtonWrapper>
+            </BottomActionsContainer>
+          </СardBottomContainer>
+        </HomeVacancyCard>
+      </NavLink>
     </>
   );
 };
